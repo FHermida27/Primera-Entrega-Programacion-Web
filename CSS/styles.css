@@ -29,9 +29,14 @@ h1 {
     font-size: 2em;
     color: red;
 }
-#Pasatiempos{
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    padding: 20px;
+
+#Contenedor {
+    border: solid white;
+    display: grid;
+    justify-content: space-around;
+    grid-template-areas: 
+        "Pasatiempos Gustos Estudio"
+        ;
+    grid-gap: 10px;
+    margin: 10px;
 }
