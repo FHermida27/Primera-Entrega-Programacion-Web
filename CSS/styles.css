@@ -5,6 +5,15 @@ body{
     margin: 0;
     padding: 0;
 }
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
 header {
     display: flex;
     align-items: center;
@@ -23,20 +32,67 @@ h1 {
     margin: 0;
     font-size: 2.5em;
 }
-#name{
-    text-align: start;
+.name{
+    text-align: center;
+    align-content: center;
     margin: 0;
     font-size: 2em;
     color: red;
 }
 
+div{
+    border: solid black;
+    margin: 0;
+}
+
+#Pasatiempos, #Gustos, #Estudio, #Contacto, #Photograph, #Foto1, #Foto2, #Foto3{
+    background-color: #c0c0c0;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
 #Contenedor {
-    border: solid white;
     display: grid;
     justify-content: space-around;
     grid-template-areas: 
-        "Pasatiempos Gustos Estudio"
+        "Contacto Pasatiempos Gustos Estudio"
+        "Photograph Foto1 Foto2 Foto3" 
         ;
     grid-gap: 10px;
     margin: 10px;
+}
+@media (max-width: 1023px) and (min-width: 481px) {
+    #Contenedor {
+        grid-template-areas: 
+           "Contacto Pasatiempos"
+           "Gustos Estudio"
+           "Photograph Foto1"
+           "Foto2 Foto3";
+    }
+}
+
+@media (max-width: 480px) {
+    #Contenedor {
+        grid-template-areas: 
+        "Contacto"
+        "Pasatiempos"
+        "Gustos"
+        "Estudio"   
+        "Photograph" 
+        "Foto1" 
+        "Foto2" 
+        "Foto3";
+    }
+    header {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    footer {
+        flex-direction: column; 
+        align-items: center; 
+    }
 }
