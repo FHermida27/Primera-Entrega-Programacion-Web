@@ -5,14 +5,10 @@ body{
     margin: 0;
     padding: 0;
 }
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+#footer{
+    background-color: red;
+    color: black;
+    padding: 10px;
 }
 header {
     display: flex;
