@@ -36,16 +36,26 @@ h1 {
     color: red;
 }
 
-div{
-    border: solid black;
-    margin: 0;
-}
-
-#Pasatiempos, #Gustos, #Estudio, #Contacto, #Photograph, #Foto1, #Foto2, #Foto3{
+#Pasatiempos, #Gustos, #Estudio, #Contacto, #Photograph, #Foto1, #Foto2, #Foto3, #Familia, #Padre, #Abuela, #Madre{
+   border: solid black;
+   margin: 0;
     background-color: #c0c0c0;
     justify-content: space-around;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+}
+#Photograph_A, #FotoP, #FotoA, #FotoM{
+    border: solid black;
+    margin: 0;
+    display: flex;
+    background-color: #c0c0c0;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
     text-align: center;
     font-size: 24px;
     font-weight: bold;
@@ -57,6 +67,8 @@ div{
     grid-template-areas: 
         "Contacto Pasatiempos Gustos Estudio"
         "Photograph Foto1 Foto2 Foto3" 
+        "Familia Padre Madre Abuela"
+        "Photograpg_A FotoP FotoM FotoA"
         ;
     grid-gap: 10px;
     margin: 10px;
@@ -67,7 +79,11 @@ div{
            "Contacto Pasatiempos"
            "Gustos Estudio"
            "Photograph Foto1"
-           "Foto2 Foto3";
+           "Foto2 Foto3"
+           "Familia Padre"
+           "Madre Abuela"
+           "Photograpg_A FotoP"
+           "FotoM FotoA";
     }
 }
 
@@ -81,7 +97,15 @@ div{
         "Photograph" 
         "Foto1" 
         "Foto2" 
-        "Foto3";
+        "Foto3"
+        "Familia"
+        "Padre"
+        "Madre"
+        "Abuela"
+        "Photograpg_A" 
+        "FotoP"
+        "FotoM" 
+        "FotoA";
     }
     header {
         flex-direction: column; 
